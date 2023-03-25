@@ -1,10 +1,12 @@
-# AI corrects my monologue
+# AI Helps Correct My Monologue
 
-This is a example command-line application that demonstrates how ChatGPT helps you learn foreign languages.
 
-With this app, you can record your voice and ChatGTP will corrects your speech into natural one.
+This command-line application demonstrates how ChatGPT can help you learn a foreign language.
+With this app, you can record your voice and ChatGPT will correct your speech to make it sound more natural.
 
-Currently only MacOS is supported.
+Currently, it's only supported on MacOS.
+
+
 
 ## Example
 
@@ -24,36 +26,39 @@ Hello, it's Saturday. It's spring in Japan. Cherry blossoms are getting to bloom
 
 # Usage
 
-Install dependent tools
+You need to first install the dependent tools:
 
 ```
 brew install jq ffmpeg
 ```
 
+Next, sign up for OpenAI, obtain your API token, and set it as an environment variable:
 
-
-Signup to OpenAI, get your API token, and set it as a enviroment variable
 ```
 export OPENAI_API_KEY="your-api-key"
 ```
 
-Run `main.sh` and talk to your mic. Once you finished talking, hit `Ctr C`.
+Then, run `main.sh` and speak into your microphone. When you're finished speaking, hit Ctrl-C:
+
+
 ```
 ./main.sh
 ```
 
-At the first time, you need to change your privacy setting to allow recording to your terminal application.
+The first time you use the application, you need to change your privacy settings to allow recording in your terminal application:
 
 `System Preferences` -> `Security & Privacy` -> `Microphone` -> Check your terminal app
 
 
 # Supported languages
 
-Currently only English is supported but I believe it's super easy to adopt it to other languages.
+Currently only English is supported but I believe it's super easy to adopt it for other languages.
 
-# Licsence
+# Licence
+
 MIT
 
 # Author
+
 @DQNEO
 
