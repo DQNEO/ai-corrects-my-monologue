@@ -4,27 +4,12 @@ This is a example command-line application that demonstrates how ChatGPT helps y
 
 With this app, you can record your voice and ChatGTP will corrects your speech into natural one.
 
-# Usage
+Currently only MacOS is supported.
 
-Install dependent tools
-
-```
-brew install jq ffmpeg
-```
-
-Signup to OpenAI, get your API token, and set it as a enviroment variable
-```
-export OPENAI_API_KEY="your-api-key"
-```
-
-Run `main.sh` and talk to your mic. Once you finished talking, hit `Ctr C`.
-```
-./main.sh
-```
-
-## Example output
+## Example
 
 ```
+$ ./main.sh
 Start recording your voice.
 Press Ctr-C when you finish talking.
 
@@ -37,9 +22,30 @@ Hello, it's Saturday. It's spring in Japan. Cherry blossoms are getting to bloom
 "Hey there, it's Saturday! Spring has arrived in Japan and we're looking forward to the cherry blossoms blooming soon. Hopefully, they'll be in full bloom by next week!"
 ```
 
-# Prerequisite
-* ffmpeg
-* jq
+# Usage
+
+Install dependent tools
+
+```
+brew install jq ffmpeg
+```
+
+
+
+Signup to OpenAI, get your API token, and set it as a enviroment variable
+```
+export OPENAI_API_KEY="your-api-key"
+```
+
+Run `main.sh` and talk to your mic. Once you finished talking, hit `Ctr C`.
+```
+./main.sh
+```
+
+At the first time, you need to change your privacy setting to allow recording to your terminal application.
+
+`System Preferences` -> `Security & Privacy` -> `Microphone` -> Check your terminal app
+
 
 # Supported languages
 
